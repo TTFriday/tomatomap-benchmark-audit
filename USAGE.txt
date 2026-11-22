@@ -1,0 +1,89 @@
+TomatoMAP benchmark audit
+Authors: Lifen Tu and Qi Peng. Repository: https://github.com/TTFriday/tomatomap-benchmark-audit.
+Research code and numerical results. No source images or model weights are redistributed.
+
+INSTALL
+Run commands from the extracted package root with Python 3.10.9 (the recorded version):
+  python -m venv .venv
+Activate the environment using your platform's standard venv activation command, then:
+  python -m pip install -r requirements.txt
+The recorded GPU environment used torch 2.6.0+cu124 and torchvision 0.21.0+cu124.
+For that build, install the pinned torch/torchvision versions from the official
+https://download.pytorch.org/whl/cu124 index before installing requirements.txt.
+Direct dependency versions are observed, not recommendations for newer versions.
+
+CHECK ARCHIVED AP WITHOUT IMAGES OR WEIGHTS
+  python scripts/tm_archive_check.py
+Checks all five paired archives, image order, identical paired GT, 31 plants,
+full planned epochs, both library AP gates (<0.002), and the archived T7 values.
+Expected AP50: 592 images = 0.6996 / 0.7030 / 0.6766 (random_img/per_set/per_plant);
+1014 images = 0.6059 / 0.5986 (random_img/per_plant).
+The archive includes prediction statistics, not photographs or detector weights.
+
+OPTIONAL OFFLINE INFERENCE (NOT REQUIRED FOR THE AP CHECK)
+  python scripts/tm_boot.py --list paired_subset__cam2__592.txt --epochs 60 --iters 1000 --out-prefix T8_recomputed592
+  python scripts/tm_boot.py --list paired_subset__cam2__1014.txt --epochs 200 --proto random_img --proto per_plant --iters 2000 --out-prefix T8_recomputed1014
+  python scripts/tm_power.py --list paired_subset__cam2__1014.txt --epochs 200 --ms 2,4,8,16,24,32 --seeds 20261201,20261202,20261203,20261204,20261205 --boot-iters 0 --out-prefix T13_recomputed1014
+These can take minutes. The last command checks all-level jackknife values, but
+bootstrap columns cannot reproduce the archived 200-iteration scan when disabled.
+Tables are written to work/tm_yolo/tables, leaving archived tables/ untouched.
+
+OPTIONAL REBUILD AND TRAIN (REQUIRES UPSTREAM DATA AND COMPUTE)
+Obtain and extract the upstream detection release with samples.json and its image
+paths intact into data/TomatoMAP. Alternatively set TOMATOMAP_DATA_ROOT in your
+shell to the extracted upstream directory. That input is read-only; work_root is
+fixed to this package's work/tm_yolo, independent of your current directory.
+  python scripts/tm_export.py
+  python scripts/tm_prepare.py
+The exporter rebuilds labels/index/splits and copies images locally. The prepare
+command only generates runtime YAML and image lists from archived split CSVs;
+it does not download images or create labels. No dataset YAML or ordinary image
+lists are shipped; the two archived paired lists are included.
+The reverse-stage split is archived. To construct it again after export:
+  python scripts/tm_split_rev.py --dry-run
+  python scripts/tm_split_rev.py
+For raw-convention labels, after repaired export:
+  python scripts/tm_export_broken.py
+Use --copy-images if directory linking is unavailable. This copies local images,
+not the upstream input. The coordinate-convention comparison is not a new metric.
+
+Supply yolo11s.pt and yolo11n.pt in work/weights. Optional official download:
+  python -c "from pathlib import Path; from urllib.request import urlretrieve; p=Path('work/weights'); p.mkdir(parents=True,exist_ok=True); [urlretrieve('https://huggingface.co/Ultralytics/YOLO11/resolve/main/'+n,str(p/n)) for n in ('yolo11s.pt','yolo11n.pt')]"
+Recorded initial-weight SHA256 fingerprints are in release_metadata.json. Compare
+these before claiming exact initialization; respect the upstream model license.
+  python scripts/tm_train.py --protocol random_img --model yolo11s --imgsz 800 --epochs 60 --batch 16 --workers 12 --tag b1
+  python scripts/tm_eval.py --run work/tm_yolo/runs/random_img/random_img__yolo11s__img800__e60__b16__b1 --group camera --weights last.pt
+Repeat training for per_set/per_plant before running default tm_paired.py or
+tm_dump_pred.py. For the 200-epoch two-arm setting, train yolo11n at imgsz=640 and
+explicitly select random_img/per_plant in paired/dump commands. CLI --help lists
+arguments. Run manifests and numerical training histories are included; trained checkpoints
+are not. T0/T1/T2/T14 are archived numerical results, not pretrained evaluations.
+New runs need not be bit-identical across hardware/library transitive versions.
+
+INTERPRETATION AND RIGHTS
+Cam2 is the only training/validation camera. Other cameras are evaluation domains;
+full-view overlap is not experimentally demonstrated camera-sibling leakage.
+All comparisons are protocol comparisons, not causal channel decompositions.
+Both paired subsets have only 31 plants; use cluster rather than image-independent
+inference and interpret rare-class support and fixed-seven-class anchors carefully.
+Source: https://doi.org/10.1038/s41597-026-06926-9
+Data: https://doi.org/10.5447/ipk/2025/14 (upstream data license: CC BY 4.0).
+No source photographs are redistributed and no new photographic rights are granted.
+Consult the upstream record for photo rights, attribution and third-party terms.
+Code copyright is retained by Lifen Tu and Qi Peng. No software licence has
+been selected for this archive. Dataset, dependency and model licences are separate.
+
+SAMPLING-SCOPE AUDIT
+  python scripts/sampling_audit.py
+Reads archived split membership and reports assignment versus consumed cam2
+training scope. Writes T15_training_scope.csv under work/tm_yolo/tables.
+
+UPSTREAM NUMERIC ANNOTATION VERIFICATION
+  python scripts/verify_annotations.py --upstream data/upstream-labels --export work/tm_yolo/labels
+Supply centre-format annotation files from the original e!DAL release. The
+upstream input may be a directory or a ZIP; repeat --upstream for multiple ZIPs.
+Matching is order independent and class constrained at tolerance 2e-6.
+The archived T20 table contains all 13,908 file comparisons and 130,111 boxes.
+T19_run_completion.csv reports planned and actual epochs for all formal runs;
+temporal_rev ended at 56 epochs, while paired comparison runs completed their
+60/200-epoch budgets. This secondary early stop is not hidden by the run name.
