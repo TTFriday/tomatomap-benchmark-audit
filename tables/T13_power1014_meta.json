@@ -1,0 +1,121 @@
+{
+  "boot_iters": 200,
+  "boot_seed": 20261117,
+  "epochs": 200,
+  "fit": {
+    "floor_se_note": "Nonpositive intercept: no demonstrated floor; mean of largest two observed levels is a plateau upper bound",
+    "intercept_floor2": -0.00040926,
+    "ms": [
+      2,
+      4,
+      8,
+      16,
+      24,
+      32
+    ],
+    "n_levels": 6,
+    "plateau_mde_80pct": 0.0274,
+    "plateau_se": 0.0095,
+    "r2": 0.882,
+    "seeds_per_level": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "slope_c": 0.00649855
+  },
+  "generated": "2026-11-17 08:29:14",
+  "gt_per_class_full": [
+    8256,
+    463,
+    868,
+    1019,
+    1096,
+    52,
+    14
+  ],
+  "imgs_per_plant_full": [
+    13,
+    14,
+    1,
+    4,
+    18,
+    51,
+    14,
+    18,
+    16,
+    16,
+    20,
+    15,
+    11,
+    72,
+    22,
+    82,
+    16,
+    76,
+    74,
+    80,
+    67,
+    26,
+    74,
+    71,
+    67,
+    9,
+    14,
+    15,
+    11,
+    15,
+    12
+  ],
+  "imgs_with_gt_full": [
+    1014,
+    282,
+    423,
+    1014,
+    563,
+    24,
+    14
+  ],
+  "index": "work/tm_yolo/index.csv",
+  "list": "work/tm_yolo/paired/paired_subset__cam2__1014.txt",
+  "mde_fac": 2.896,
+  "ms": [
+    2,
+    4,
+    8,
+    16,
+    24,
+    32,
+    "all"
+  ],
+  "n_cluster": 31,
+  "n_img": 1014,
+  "npz": [
+    "work/tm_yolo/boot/random_img__e200__last__paired_subset__cam2__1014.npz",
+    "work/tm_yolo/boot/per_plant__e200__last__paired_subset__cam2__1014.npz"
+  ],
+  "protos": [
+    "random_img",
+    "per_plant"
+  ],
+  "reproduce_check": {
+    "boot_se": "0.0106",
+    "delta": "0.0073",
+    "jk_delta": "0.013",
+    "jk_se": "0.0079"
+  },
+  "sel_seeds": [
+    20261201,
+    20261202,
+    20261203,
+    20261204,
+    20261205
+  ],
+  "skipped_no_anchor": {},
+  "t_df": 30,
+  "tcrit_975": 2.0423,
+  "weights": "last.pt"
+}

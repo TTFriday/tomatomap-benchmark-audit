@@ -1,0 +1,13 @@
+run,protocol,model,imgsz,epochs,n_train_all_cams,n_train_cam2,n_test_cam2,pct_test_plant_in_train,pct_test_nearcopy_in_train,pct_test_stage_unseen,class_prior_TV,bbch_W1,med_bbch_train_test,cam2_test_mAP50_last,cam2_test_mAP50_95_last,cam2_test_mAP50_best,best_minus_last
+random_img__yolo11n__img640__e200__b16__off_n640,random_img,yolo11n,640,200,45124,11261,1615,100.0,97.1,0.0,0.001,0.11,72.0/72.0,0.6219,0.4464,0.6219,0.0
+random_img__yolo11s__img800__e60__b16__b1,random_img,yolo11s,800,60,45124,11261,1615,100.0,97.1,0.0,0.001,0.11,72.0/72.0,0.6702,0.4738,0.6672,-0.003
+per_plant__yolo11n__img640__e200__b16__off_n640,per_plant,yolo11n,640,200,43008,10752,2316,0.0,0.0,2.6,0.0384,5.84,72.0/70.0,0.6026,0.4239,0.6026,0.0
+per_plant__yolo11s__img800__e60__b16__b1,per_plant,yolo11s,800,60,43008,10752,2316,0.0,0.0,2.6,0.0384,5.84,72.0/70.0,0.614,0.4405,0.6179,0.0039
+per_set__yolo11s__img800__e60__b16__b1,per_set,yolo11s,800,60,45124,11281,1612,100.0,0.0,0.0,0.0029,0.21,72.0/72.0,0.6629,0.4749,0.6621,-0.0008
+stage_holdout__yolo11s__img800__e60__b16__b1,stage_holdout,yolo11s,800,60,45120,11280,1620,100.0,0.0,100.0,0.2574,28.26,67.0/84.0,0.5759,0.4048,0.5783,0.0024
+stage_holdout_rev__yolo11s__img800__e60__b16__rev,stage_holdout_rev,yolo11s,800,60,45120,11280,1620,100.0,0.0,100.0,0.2573,62.26,76.0/13.0,0.6464,0.4558,0.6202,-0.0262
+temporal_fwd__yolo11s__img800__e60__b16__b1,temporal_fwd,yolo11s,800,60,43344,10836,1680,100.0,0.0,0.0,0.2608,24.88,66.0/81.0,0.6455,0.4768,0.6428,-0.0027
+temporal_rev__yolo11s__img800__e60__b16__b1,temporal_rev,yolo11s,800,60,51840,12960,972,74.1,0.0,7.4,0.1688,22.21,73.0/59.0,0.3802,0.2629,0.379,-0.0012
+stage_strat__yolo11s__img800__e60__b16__b1,stage_strat,yolo11s,800,60,41184,10296,1740,0.0,0.0,0.0,0.0697,3.41,72.0/73.0,0.6614,0.4693,0.6614,0.0
+broken__random_img__yolo11s__img800__e60__b16__b4,broken__random_img,yolo11s,800,60,45124,11261,1615,100.0,97.1,0.0,0.001,0.11,72.0/72.0,0.5406,0.313,0.5403,-0.0003
+broken__per_plant__yolo11s__img800__e60__b16__b4,broken__per_plant,yolo11s,800,60,43008,10752,2316,0.0,0.0,2.6,0.0384,5.84,72.0/70.0,0.4867,0.2745,0.4867,0.0

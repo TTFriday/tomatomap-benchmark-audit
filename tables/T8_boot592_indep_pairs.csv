@@ -1,0 +1,13 @@
+cluster,list,n_img,n_cluster,t_df,weights,seed,pair,metric,delta,ci_lo,ci_hi,boot_se,jk_delta,jk_se,jk_ci_lo,jk_ci_hi,se_ratio,boot_prob_le_0,iters
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_set,mAP50_present,-0.0034,-0.0519,0.0429,0.0239,-0.0117,0.0303,-0.0713,0.0478,1.27,0.588,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_set,mAP50_95_present,0.005,-0.0232,0.0388,0.0156,0.0289,0.0157,-0.0021,0.0598,1.011,0.3855,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_set,mAP50_fix7,-0.0034,-0.0519,0.0429,0.0239,-0.0117,0.0303,-0.0713,0.0478,1.27,0.588,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_set,mAP50_95_fix7,0.005,-0.0232,0.0388,0.0156,0.0289,0.0157,-0.0021,0.0598,1.011,0.3855,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_plant,mAP50_present,0.0231,-0.0184,0.0732,0.0227,0.0033,0.0197,-0.0354,0.0421,0.867,0.127,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_plant,mAP50_95_present,0.0151,-0.0014,0.0344,0.0091,0.0199,0.0083,0.0036,0.0361,0.905,0.0345,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_plant,mAP50_fix7,0.0231,-0.0184,0.0732,0.0227,0.0033,0.0197,-0.0354,0.0421,0.868,0.127,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,random_img_minus_per_plant,mAP50_95_fix7,0.0151,-0.0014,0.0344,0.0091,0.0199,0.0083,0.0036,0.0361,0.905,0.0345,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,per_set_minus_per_plant,mAP50_present,0.0265,-0.0262,0.0963,0.0311,0.015,0.0369,-0.0574,0.0875,1.185,0.1675,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,per_set_minus_per_plant,mAP50_95_present,0.0101,-0.0146,0.0391,0.0132,-0.009,0.0118,-0.0321,0.0141,0.89,0.184,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,per_set_minus_per_plant,mAP50_fix7,0.0265,-0.0262,0.0963,0.0311,0.015,0.0369,-0.0574,0.0875,1.185,0.1675,2000
+image,work/tm_yolo/paired/paired_subset__cam2__592.txt,592,592,591,last,20261117,per_set_minus_per_plant,mAP50_95_fix7,0.0101,-0.0146,0.0391,0.0132,-0.009,0.0118,-0.0321,0.0141,0.89,0.184,2000

@@ -1,0 +1,13 @@
+run,protocol,model,imgsz,epochs,wall_h,n_train_cam2,n_val_cam2,n_test_cam2,cam2_val_mAP50,cam2_val_mAP50_95
+broken__per_plant__yolo11s__img800__e60__b16__b4,broken__per_plant,yolo11s,800,60,2.296,10752,3048,2316,0.5368,0.307
+broken__random_img__yolo11s__img800__e60__b16__b4,broken__random_img,yolo11s,800,60,2.222,11261,3240,1615,0.5248,0.302
+per_plant__yolo11n__img640__e200__b16__off_n640,per_plant,yolo11n,640,200,5.129,10752,3048,2316,0.6279,0.443
+per_plant__yolo11s__img800__e60__b16__b1,per_plant,yolo11s,800,60,2.07,10752,3048,2316,0.6609,0.4683
+per_set__yolo11s__img800__e60__b16__b1,per_set,yolo11s,800,60,2.204,11281,3223,1612,0.6654,0.4677
+random_img__yolo11n__img640__e200__b16__off_n640,random_img,yolo11n,640,200,5.384,11261,3240,1615,0.6126,0.4362
+random_img__yolo11s__img800__e60__b16__b1,random_img,yolo11s,800,60,2.209,11261,3240,1615,0.6447,0.46
+stage_holdout__yolo11s__img800__e60__b16__b1,stage_holdout,yolo11s,800,60,2.22,11280,3216,1620,0.651,0.4744
+stage_holdout_rev__yolo11s__img800__e60__b16__rev,stage_holdout_rev,yolo11s,800,60,2.16,11280,3216,1620,0.4748,0.3271
+stage_strat__yolo11s__img800__e60__b16__b1,stage_strat,yolo11s,800,60,2.056,10296,4080,1740,0.6297,0.4424
+temporal_fwd__yolo11s__img800__e60__b16__b1,temporal_fwd,yolo11s,800,60,2.186,10836,3600,1680,0.6458,0.4612
+temporal_rev__yolo11s__img800__e60__b16__b1,temporal_rev,yolo11s,800,60,2.209,12960,2184,972,0.5113,0.351

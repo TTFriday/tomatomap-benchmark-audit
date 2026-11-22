@@ -1,0 +1,2 @@
+generated,pair,metric,list,cluster,n_img,n_cluster,t_df,iters,seed,seconds,observed_delta,perm_p_two_sided,note
+2026-11-17 08:15:25,random_img_minus_per_plant,mAP50_fix7,work/tm_yolo/paired/paired_subset__cam2__1014.txt,plant,1014,31,30,2000,20261118,413.6,0.0073,0.64518,Null: image-level arm records exchangeable within plant clusters; p=(count(|delta*|>=|delta_obs|)+1)/(k+1)

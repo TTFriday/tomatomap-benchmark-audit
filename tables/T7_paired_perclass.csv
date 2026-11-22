@@ -1,0 +1,36 @@
+list,weights,n_img_paired,protocol,cls,AP50
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,leaf,0.9004
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,batch of flowers,0.5845
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,batch of fruits,0.776
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,whole plant,0.995
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,rispe,0.7491
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,axillary shoot,0.1035
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img,shoot,0.1329
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,leaf,0.8943
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,batch of flowers,0.5941
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,batch of fruits,0.7739
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,whole plant,0.995
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,rispe,0.7203
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,axillary shoot,0.0719
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,per_plant,shoot,0.141
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,leaf,0.9111
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,batch of flowers,0.6751
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,batch of fruits,0.7956
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,whole plant,0.995
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,rispe,0.8173
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,axillary shoot,0.3899
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img,shoot,0.3134
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,leaf,0.9069
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,batch of flowers,0.6759
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,batch of fruits,0.8158
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,whole plant,0.995
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,rispe,0.8093
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,axillary shoot,0.4721
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set,shoot,0.2463
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,leaf,0.9047
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,batch of flowers,0.6811
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,batch of fruits,0.796
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,whole plant,0.995
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,rispe,0.7909
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,axillary shoot,0.4371
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_plant,shoot,0.1311

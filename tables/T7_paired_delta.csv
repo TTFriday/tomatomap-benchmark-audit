@@ -1,0 +1,5 @@
+list,weights,n_img_paired,pair,d_mAP50,d_mAP50_95
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,last,1014,random_img − per_plant,0.0073,0.0035
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img − per_set,-0.0034,0.005
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,random_img − per_plant,0.023,0.0151
+work/tm_yolo/paired/paired_subset__cam2__592.txt,last,592,per_set − per_plant,0.0264,0.0101

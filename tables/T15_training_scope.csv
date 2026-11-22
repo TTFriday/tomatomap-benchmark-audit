@@ -1,0 +1,17 @@
+protocol,scope,test_camera,n_train_images,n_test_images,n_test_plants,pct_test_plant_in_train,pct_test_set_in_train
+per_plant,all_camera_assignment,cam2_horizontal90,43008,2316,11,0.0,0.0
+per_plant,actual_cam2_training,cam2_horizontal90,10752,2316,11,0.0,0.0
+per_set,all_camera_assignment,cam2_horizontal90,45124,1612,100,100.0,0.0
+per_set,actual_cam2_training,cam2_horizontal90,11281,1612,100,100.0,0.0
+random_img,all_camera_assignment,cam2_horizontal90,45124,1615,101,100.0,97.08978328173374
+random_img,actual_cam2_training,cam2_horizontal90,11261,1615,101,100.0,0.0
+stage_holdout,all_camera_assignment,cam2_horizontal90,45120,1620,63,100.0,0.0
+stage_holdout,actual_cam2_training,cam2_horizontal90,11280,1620,63,100.0,0.0
+stage_holdout_rev,all_camera_assignment,cam2_horizontal90,45120,1620,43,100.0,0.0
+stage_holdout_rev,actual_cam2_training,cam2_horizontal90,11280,1620,43,100.0,0.0
+stage_strat,all_camera_assignment,cam2_horizontal90,41184,1740,12,0.0,0.0
+stage_strat,actual_cam2_training,cam2_horizontal90,10296,1740,12,0.0,0.0
+temporal_fwd,all_camera_assignment,cam2_horizontal90,43344,1680,60,100.0,0.0
+temporal_fwd,actual_cam2_training,cam2_horizontal90,10836,1680,60,100.0,0.0
+temporal_rev,all_camera_assignment,cam2_horizontal90,51840,972,41,74.07407407407408,0.0
+temporal_rev,actual_cam2_training,cam2_horizontal90,12960,972,41,74.07407407407408,0.0

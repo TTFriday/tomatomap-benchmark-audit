@@ -1,0 +1,15 @@
+cluster,list,n_img,n_cluster,t_df,weights,seed,protocol,cls,support,n_img_with_gt,ap50,ap50_ci_lo,ap50_ci_hi,boot_se,p_absent,ap50_95
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,leaf,8256,1014,0.9004,0.8874,0.9115,0.0063,0.0,0.6817
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,batch of flowers,463,282,0.5845,0.4985,0.6711,0.0439,0.0,0.3081
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,batch of fruits,868,423,0.776,0.7317,0.8252,0.0235,0.0,0.536
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,whole plant,1019,1014,0.995,0.9948,0.995,0.0001,0.0,0.9458
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,rispe,1096,563,0.7491,0.7122,0.7915,0.0201,0.0,0.4982
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,axillary shoot,52,24,0.1035,0.0492,0.2932,0.0672,0.0,0.0323
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,random_img,shoot,14,14,0.1329,0.0039,0.3231,0.0905,0.0005,0.0361
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,leaf,8256,1014,0.8943,0.8813,0.9068,0.0067,0.0,0.6697
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,batch of flowers,463,282,0.5941,0.5105,0.6799,0.043,0.0,0.3129
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,batch of fruits,868,423,0.7739,0.7329,0.8178,0.0219,0.0,0.5195
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,whole plant,1019,1014,0.995,0.9948,0.995,0.0001,0.0,0.939
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,rispe,1096,563,0.7203,0.6853,0.7622,0.0196,0.0,0.4754
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,axillary shoot,52,24,0.0719,0.0506,0.2563,0.0595,0.0,0.0302
+plant,work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,31,30,last,20261117,per_plant,shoot,14,14,0.141,0.007,0.3682,0.1077,0.0005,0.0665

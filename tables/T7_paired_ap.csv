@@ -1,0 +1,6 @@
+list,n_img_paired,weights,protocol,run,imgsz,n_class_gt,mAP50,mAP50_95,P,R,ref,delta_vs_ref
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,last,random_img,random_img__yolo11n__img640__e200__b16__off_n640,640,7,0.6059,0.434,0.8013,0.5624,per_plant,0.0073
+work/tm_yolo/paired/paired_subset__cam2__1014.txt,1014,last,per_plant,per_plant__yolo11n__img640__e200__b16__off_n640,640,7,0.5986,0.4305,0.6931,0.5696,per_plant,0.0
+work/tm_yolo/paired/paired_subset__cam2__592.txt,592,last,random_img,random_img__yolo11s__img800__e60__b16__b1,800,7,0.6996,0.4916,0.6494,0.6993,per_plant,0.023
+work/tm_yolo/paired/paired_subset__cam2__592.txt,592,last,per_set,per_set__yolo11s__img800__e60__b16__b1,800,7,0.703,0.4866,0.6343,0.7125,per_plant,0.0264
+work/tm_yolo/paired/paired_subset__cam2__592.txt,592,last,per_plant,per_plant__yolo11s__img800__e60__b16__b1,800,7,0.6766,0.4765,0.5839,0.7024,per_plant,0.0

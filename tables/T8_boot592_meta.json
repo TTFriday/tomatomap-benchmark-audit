@@ -1,0 +1,42 @@
+{
+  "generated": "2026-11-17 07:47:10",
+  "cluster": "plant",
+  "iters": 2000,
+  "seed": 20261117,
+  "list": "work/tm_yolo/paired/paired_subset__cam2__592.txt",
+  "arms": [
+    "random_img",
+    "per_set",
+    "per_plant"
+  ],
+  "npz_stems": [
+    "random_img__e60__last__paired_subset__cam2__592",
+    "per_set__e60__last__paired_subset__cam2__592",
+    "per_plant__e60__last__paired_subset__cam2__592"
+  ],
+  "n_img": 592,
+  "n_cluster": 31,
+  "t_df": 30,
+  "t_crit": 2.0423,
+  "gate": 0.002,
+  "perm": {
+    "iters": 2000,
+    "seeds": [
+      20261118,
+      20261119,
+      20261120
+    ],
+    "pairs": [
+      "random_img_minus_per_set",
+      "random_img_minus_per_plant",
+      "per_set_minus_per_plant"
+    ],
+    "p": {
+      "random_img_minus_per_set": 0.89705,
+      "random_img_minus_per_plant": 0.26487,
+      "per_set_minus_per_plant": 0.36632
+    }
+  },
+  "seconds": 798.1,
+  "caliber": "present=macro AP over GT-present classes; fix7=seven classes with absent-class full-subset anchors; jk=leave-one-cluster jackknife+t(df=n_cluster-1), preferred with few clusters"
+}

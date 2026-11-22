@@ -1,0 +1,4 @@
+generated,pair,metric,list,cluster,n_img,n_cluster,t_df,iters,seed,seconds,observed_delta,perm_p_two_sided,note
+2026-11-17 07:41:23,random_img_minus_per_set,mAP50_fix7,work/tm_yolo/paired/paired_subset__cam2__592.txt,plant,592,31,30,2000,20261118,176.0,-0.0034,0.89705,Null: image-level arm records exchangeable within plant clusters; p=(count(|delta*|>=|delta_obs|)+1)/(k+1)
+2026-11-17 07:44:15,random_img_minus_per_plant,mAP50_fix7,work/tm_yolo/paired/paired_subset__cam2__592.txt,plant,592,31,30,2000,20261119,172.8,0.0231,0.26487,Null: image-level arm records exchangeable within plant clusters; p=(count(|delta*|>=|delta_obs|)+1)/(k+1)
+2026-11-17 07:47:10,per_set_minus_per_plant,mAP50_fix7,work/tm_yolo/paired/paired_subset__cam2__592.txt,plant,592,31,30,2000,20261120,174.7,0.0265,0.36632,Null: image-level arm records exchangeable within plant clusters; p=(count(|delta*|>=|delta_obs|)+1)/(k+1)

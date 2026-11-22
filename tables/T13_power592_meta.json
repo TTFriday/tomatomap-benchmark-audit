@@ -1,0 +1,123 @@
+{
+  "boot_iters": 200,
+  "boot_seed": 20261117,
+  "epochs": 60,
+  "fit": {
+    "floor_mde_80pct": 0.0341,
+    "floor_se": 0.0118,
+    "floor_se_note": "Positive intercept: extrapolated precision floor",
+    "intercept_floor2": 0.00013903,
+    "ms": [
+      2,
+      4,
+      8,
+      16,
+      24,
+      32
+    ],
+    "n_levels": 6,
+    "plateau_mde_80pct": 0.0669,
+    "plateau_se": 0.0231,
+    "r2": 0.989,
+    "seeds_per_level": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "slope_c": 0.00921953
+  },
+  "generated": "2026-11-17 08:31:27",
+  "gt_per_class_full": [
+    4959,
+    299,
+    491,
+    594,
+    668,
+    18,
+    7
+  ],
+  "imgs_per_plant_full": [
+    11,
+    4,
+    1,
+    4,
+    18,
+    25,
+    16,
+    20,
+    17,
+    20,
+    22,
+    16,
+    14,
+    27,
+    18,
+    34,
+    16,
+    35,
+    35,
+    32,
+    27,
+    18,
+    38,
+    32,
+    26,
+    9,
+    10,
+    12,
+    10,
+    11,
+    14
+  ],
+  "imgs_with_gt_full": [
+    592,
+    167,
+    263,
+    592,
+    359,
+    15,
+    7
+  ],
+  "index": "work/tm_yolo/index.csv",
+  "list": "work/tm_yolo/paired/paired_subset__cam2__592.txt",
+  "mde_fac": 2.896,
+  "ms": [
+    2,
+    4,
+    8,
+    16,
+    24,
+    32,
+    "all"
+  ],
+  "n_cluster": 31,
+  "n_img": 592,
+  "npz": [
+    "work/tm_yolo/boot/random_img__e60__last__paired_subset__cam2__592.npz",
+    "work/tm_yolo/boot/per_plant__e60__last__paired_subset__cam2__592.npz"
+  ],
+  "protos": [
+    "random_img",
+    "per_plant"
+  ],
+  "reproduce_check": {
+    "boot_se": "0.0257",
+    "delta": "0.0231",
+    "jk_delta": "0.022",
+    "jk_se": "0.0232"
+  },
+  "sel_seeds": [
+    20261201,
+    20261202,
+    20261203,
+    20261204,
+    20261205
+  ],
+  "skipped_no_anchor": {},
+  "t_df": 30,
+  "tcrit_975": 2.0423,
+  "weights": "last.pt"
+}
